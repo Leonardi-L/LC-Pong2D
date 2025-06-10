@@ -7,6 +7,7 @@ public class SceneManagement : MonoBehaviour
 {
     public void ChangeScene(string sceneName)
     {
+        Time.timeScale = 1f; // <--- Reset time scale sebelum ganti scene
         SceneManager.LoadScene(sceneName);
     }
 
@@ -15,3 +16,4 @@ public class SceneManagement : MonoBehaviour
         Application.Quit();
     }
 }
+
